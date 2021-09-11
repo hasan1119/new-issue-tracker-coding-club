@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Issue Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+</head>
+
+<body onload="showData()">
+    <section class="container">
+        <h2>New Issue Tracker</h2>
+        <div class="bg-info p-5 rounded">
+            <h4>Add New Issue</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description</label>
+                    <input type="email" class="form-control" id="desc" placeholder="Describe your Issue....">
+                </div>
+                <div class="mb-3">
+                    <label for="sensibility" class="form-label">Sensibility</label>
+                    <select id="sensibility" class="form-select" aria-label="Default select example">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="assigned" class="form-label">Assigned To</label>
+                    <input type="email" class="form-control" id="assigned" placeholder="Enter Responsible...">
+                </div>
+                <button id="btn" class="btn btn-danger">Add</button>
+            </form>
+        </div>
+
+        <div id="issue-container" class="mt-5">
+           
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
